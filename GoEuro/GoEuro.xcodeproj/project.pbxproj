@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		766D13F11F5C2A9200AA10E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D13F01F5C2A9200AA10E8 /* main.m */; };
+		766D13F41F5C2A9200AA10E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D13F31F5C2A9200AA10E8 /* AppDelegate.m */; };
+		766D13FA1F5C2A9200AA10E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766D13F81F5C2A9200AA10E8 /* Main.storyboard */; };
+		766D13FC1F5C2A9200AA10E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766D13FB1F5C2A9200AA10E8 /* Assets.xcassets */; };
+		766D13FF1F5C2A9200AA10E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766D13FD1F5C2A9200AA10E8 /* LaunchScreen.storyboard */; };
+		766D14151F5C2A9200AA10E8 /* GoEuroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D14141F5C2A9200AA10E8 /* GoEuroUITests.m */; };
+		766D14251F5C2C1900AA10E8 /* GETravelsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D14241F5C2C1900AA10E8 /* GETravelsListViewController.m */; };
+		766D142A1F5C2C7D00AA10E8 /* GETravelsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D14291F5C2C7D00AA10E8 /* GETravelsLoader.m */; };
+		766D142D1F5C2C9600AA10E8 /* GEJSONTravelsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D142C1F5C2C9600AA10E8 /* GEJSONTravelsParser.m */; };
+		766D14301F5C2CA400AA10E8 /* GETravel.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D142F1F5C2CA400AA10E8 /* GETravel.m */; };
+		766D14331F5C340900AA10E8 /* GEJSONTravelsParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D14321F5C340900AA10E8 /* GEJSONTravelsParserTests.m */; };
+		766D14351F5C343700AA10E8 /* GETravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D14341F5C343700AA10E8 /* GETravelTests.m */; };
+		766D14381F5C347800AA10E8 /* GETravelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D14371F5C347800AA10E8 /* GETravelTableViewCell.m */; };
+		766D143B1F5C3FA400AA10E8 /* GESearchTravelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D143A1F5C3FA400AA10E8 /* GESearchTravelsViewController.m */; };
+		766D143F1F5EF00900AA10E8 /* NSLayoutConstraint+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D143E1F5EF00900AA10E8 /* NSLayoutConstraint+Helpers.m */; };
+		766D14421F6154B500AA10E8 /* GETravelsLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D14411F6154B500AA10E8 /* GETravelsLoaderTests.m */; };
+		766D14461F61597600AA10E8 /* GERemoteDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D14451F61597600AA10E8 /* GERemoteDataLoader.m */; };
+		766D14491F61599E00AA10E8 /* GELocalDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 766D14481F61599E00AA10E8 /* GELocalDataLoader.m */; };
+		766D144B1F61628B00AA10E8 /* testTravels.json in Resources */ = {isa = PBXBuildFile; fileRef = 766D144A1F61628B00AA10E8 /* testTravels.json */; };
+		766D144D1F6163C400AA10E8 /* incorrectJSONTestTravels.json in Resources */ = {isa = PBXBuildFile; fileRef = 766D144C1F6163C400AA10E8 /* incorrectJSONTestTravels.json */; };
+		766D144F1F61641300AA10E8 /* incorrectAPITestTravels.json in Resources */ = {isa = PBXBuildFile; fileRef = 766D144E1F61641300AA10E8 /* incorrectAPITestTravels.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		766D14061F5C2A9200AA10E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766D13E41F5C2A9200AA10E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 766D13EB1F5C2A9200AA10E8;
+			remoteInfo = GoEuro;
+		};
+		766D14111F5C2A9200AA10E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766D13E41F5C2A9200AA10E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 766D13EB1F5C2A9200AA10E8;
+			remoteInfo = GoEuro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		766D13EC1F5C2A9200AA10E8 /* GoEuro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		766D13F01F5C2A9200AA10E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		766D13F21F5C2A9200AA10E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		766D13F31F5C2A9200AA10E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		766D13F91F5C2A9200AA10E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		766D13FB1F5C2A9200AA10E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		766D13FE1F5C2A9200AA10E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		766D14001F5C2A9200AA10E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		766D14051F5C2A9200AA10E8 /* GoEuroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoEuroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		766D140B1F5C2A9200AA10E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		766D14101F5C2A9200AA10E8 /* GoEuroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoEuroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		766D14141F5C2A9200AA10E8 /* GoEuroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoEuroUITests.m; sourceTree = "<group>"; };
+		766D14161F5C2A9200AA10E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		766D14231F5C2C1900AA10E8 /* GETravelsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelsListViewController.h; path = Controllers/GETravelsListViewController.h; sourceTree = "<group>"; };
+		766D14241F5C2C1900AA10E8 /* GETravelsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelsListViewController.m; path = Controllers/GETravelsListViewController.m; sourceTree = "<group>"; };
+		766D14281F5C2C7D00AA10E8 /* GETravelsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelsLoader.h; path = Models/GETravelsLoader.h; sourceTree = "<group>"; };
+		766D14291F5C2C7D00AA10E8 /* GETravelsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelsLoader.m; path = Models/GETravelsLoader.m; sourceTree = "<group>"; };
+		766D142B1F5C2C9600AA10E8 /* GEJSONTravelsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEJSONTravelsParser.h; path = Models/GEJSONTravelsParser.h; sourceTree = "<group>"; };
+		766D142C1F5C2C9600AA10E8 /* GEJSONTravelsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEJSONTravelsParser.m; path = Models/GEJSONTravelsParser.m; sourceTree = "<group>"; };
+		766D142E1F5C2CA400AA10E8 /* GETravel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravel.h; path = Models/GETravel.h; sourceTree = "<group>"; };
+		766D142F1F5C2CA400AA10E8 /* GETravel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravel.m; path = Models/GETravel.m; sourceTree = "<group>"; };
+		766D14311F5C2FEE00AA10E8 /* GETravelsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelsParser.h; path = Models/GETravelsParser.h; sourceTree = "<group>"; };
+		766D14321F5C340900AA10E8 /* GEJSONTravelsParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEJSONTravelsParserTests.m; sourceTree = "<group>"; };
+		766D14341F5C343700AA10E8 /* GETravelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GETravelTests.m; sourceTree = "<group>"; };
+		766D14361F5C347800AA10E8 /* GETravelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelTableViewCell.h; path = Views/GETravelTableViewCell.h; sourceTree = "<group>"; };
+		766D14371F5C347800AA10E8 /* GETravelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelTableViewCell.m; path = Views/GETravelTableViewCell.m; sourceTree = "<group>"; };
+		766D14391F5C3FA400AA10E8 /* GESearchTravelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GESearchTravelsViewController.h; path = Controllers/GESearchTravelsViewController.h; sourceTree = "<group>"; };
+		766D143A1F5C3FA400AA10E8 /* GESearchTravelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GESearchTravelsViewController.m; path = Controllers/GESearchTravelsViewController.m; sourceTree = "<group>"; };
+		766D143D1F5EF00900AA10E8 /* NSLayoutConstraint+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+Helpers.h"; path = "Categories/NSLayoutConstraint+Helpers.h"; sourceTree = "<group>"; };
+		766D143E1F5EF00900AA10E8 /* NSLayoutConstraint+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+Helpers.m"; path = "Categories/NSLayoutConstraint+Helpers.m"; sourceTree = "<group>"; };
+		766D14411F6154B500AA10E8 /* GETravelsLoaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GETravelsLoaderTests.m; sourceTree = "<group>"; };
+		766D14431F6158F600AA10E8 /* GEDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEDataLoader.h; path = Models/GEDataLoader.h; sourceTree = "<group>"; };
+		766D14441F61597600AA10E8 /* GERemoteDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GERemoteDataLoader.h; path = Models/GERemoteDataLoader.h; sourceTree = "<group>"; };
+		766D14451F61597600AA10E8 /* GERemoteDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GERemoteDataLoader.m; path = Models/GERemoteDataLoader.m; sourceTree = "<group>"; };
+		766D14471F61599E00AA10E8 /* GELocalDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GELocalDataLoader.h; sourceTree = "<group>"; };
+		766D14481F61599E00AA10E8 /* GELocalDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GELocalDataLoader.m; sourceTree = "<group>"; };
+		766D144A1F61628B00AA10E8 /* testTravels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testTravels.json; sourceTree = "<group>"; };
+		766D144C1F6163C400AA10E8 /* incorrectJSONTestTravels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = incorrectJSONTestTravels.json; sourceTree = "<group>"; };
+		766D144E1F61641300AA10E8 /* incorrectAPITestTravels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = incorrectAPITestTravels.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		766D13E91F5C2A9200AA10E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766D14021F5C2A9200AA10E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766D140D1F5C2A9200AA10E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		766D13E31F5C2A9200AA10E8 = {
+			isa = PBXGroup;
+			children = (
+				766D13EE1F5C2A9200AA10E8 /* GoEuro */,
+				766D14081F5C2A9200AA10E8 /* GoEuroTests */,
+				766D14131F5C2A9200AA10E8 /* GoEuroUITests */,
+				766D13ED1F5C2A9200AA10E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		766D13ED1F5C2A9200AA10E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				766D13EC1F5C2A9200AA10E8 /* GoEuro.app */,
+				766D14051F5C2A9200AA10E8 /* GoEuroTests.xctest */,
+				766D14101F5C2A9200AA10E8 /* GoEuroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		766D13EE1F5C2A9200AA10E8 /* GoEuro */ = {
+			isa = PBXGroup;
+			children = (
+				766D143C1F5EEF1F00AA10E8 /* Categories */,
+				766D14271F5C2C3900AA10E8 /* Views */,
+				766D14261F5C2C3300AA10E8 /* Models */,
+				766D14221F5C2BEE00AA10E8 /* Controllers */,
+				766D13F21F5C2A9200AA10E8 /* AppDelegate.h */,
+				766D13F31F5C2A9200AA10E8 /* AppDelegate.m */,
+				766D13F81F5C2A9200AA10E8 /* Main.storyboard */,
+				766D13FB1F5C2A9200AA10E8 /* Assets.xcassets */,
+				766D13FD1F5C2A9200AA10E8 /* LaunchScreen.storyboard */,
+				766D14001F5C2A9200AA10E8 /* Info.plist */,
+				766D13EF1F5C2A9200AA10E8 /* Supporting Files */,
+			);
+			path = GoEuro;
+			sourceTree = "<group>";
+		};
+		766D13EF1F5C2A9200AA10E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				766D13F01F5C2A9200AA10E8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		766D14081F5C2A9200AA10E8 /* GoEuroTests */ = {
+			isa = PBXGroup;
+			children = (
+				766D144E1F61641300AA10E8 /* incorrectAPITestTravels.json */,
+				766D144C1F6163C400AA10E8 /* incorrectJSONTestTravels.json */,
+				766D144A1F61628B00AA10E8 /* testTravels.json */,
+				766D140B1F5C2A9200AA10E8 /* Info.plist */,
+				766D14321F5C340900AA10E8 /* GEJSONTravelsParserTests.m */,
+				766D14341F5C343700AA10E8 /* GETravelTests.m */,
+				766D14411F6154B500AA10E8 /* GETravelsLoaderTests.m */,
+				766D14471F61599E00AA10E8 /* GELocalDataLoader.h */,
+				766D14481F61599E00AA10E8 /* GELocalDataLoader.m */,
+			);
+			path = GoEuroTests;
+			sourceTree = "<group>";
+		};
+		766D14131F5C2A9200AA10E8 /* GoEuroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				766D14141F5C2A9200AA10E8 /* GoEuroUITests.m */,
+				766D14161F5C2A9200AA10E8 /* Info.plist */,
+			);
+			path = GoEuroUITests;
+			sourceTree = "<group>";
+		};
+		766D14221F5C2BEE00AA10E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				766D14231F5C2C1900AA10E8 /* GETravelsListViewController.h */,
+				766D14241F5C2C1900AA10E8 /* GETravelsListViewController.m */,
+				766D14391F5C3FA400AA10E8 /* GESearchTravelsViewController.h */,
+				766D143A1F5C3FA400AA10E8 /* GESearchTravelsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		766D14261F5C2C3300AA10E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				766D14281F5C2C7D00AA10E8 /* GETravelsLoader.h */,
+				766D14291F5C2C7D00AA10E8 /* GETravelsLoader.m */,
+				766D142B1F5C2C9600AA10E8 /* GEJSONTravelsParser.h */,
+				766D142C1F5C2C9600AA10E8 /* GEJSONTravelsParser.m */,
+				766D142E1F5C2CA400AA10E8 /* GETravel.h */,
+				766D142F1F5C2CA400AA10E8 /* GETravel.m */,
+				766D14311F5C2FEE00AA10E8 /* GETravelsParser.h */,
+				766D14431F6158F600AA10E8 /* GEDataLoader.h */,
+				766D14441F61597600AA10E8 /* GERemoteDataLoader.h */,
+				766D14451F61597600AA10E8 /* GERemoteDataLoader.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		766D14271F5C2C3900AA10E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				766D14361F5C347800AA10E8 /* GETravelTableViewCell.h */,
+				766D14371F5C347800AA10E8 /* GETravelTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		766D143C1F5EEF1F00AA10E8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				766D143D1F5EF00900AA10E8 /* NSLayoutConstraint+Helpers.h */,
+				766D143E1F5EF00900AA10E8 /* NSLayoutConstraint+Helpers.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		766D13EB1F5C2A9200AA10E8 /* GoEuro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766D14191F5C2A9200AA10E8 /* Build configuration list for PBXNativeTarget "GoEuro" */;
+			buildPhases = (
+				766D13E81F5C2A9200AA10E8 /* Sources */,
+				766D13E91F5C2A9200AA10E8 /* Frameworks */,
+				766D13EA1F5C2A9200AA10E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoEuro;
+			productName = GoEuro;
+			productReference = 766D13EC1F5C2A9200AA10E8 /* GoEuro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		766D14041F5C2A9200AA10E8 /* GoEuroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766D141C1F5C2A9200AA10E8 /* Build configuration list for PBXNativeTarget "GoEuroTests" */;
+			buildPhases = (
+				766D14011F5C2A9200AA10E8 /* Sources */,
+				766D14021F5C2A9200AA10E8 /* Frameworks */,
+				766D14031F5C2A9200AA10E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				766D14071F5C2A9200AA10E8 /* PBXTargetDependency */,
+			);
+			name = GoEuroTests;
+			productName = GoEuroTests;
+			productReference = 766D14051F5C2A9200AA10E8 /* GoEuroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		766D140F1F5C2A9200AA10E8 /* GoEuroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766D141F1F5C2A9200AA10E8 /* Build configuration list for PBXNativeTarget "GoEuroUITests" */;
+			buildPhases = (
+				766D140C1F5C2A9200AA10E8 /* Sources */,
+				766D140D1F5C2A9200AA10E8 /* Frameworks */,
+				766D140E1F5C2A9200AA10E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				766D14121F5C2A9200AA10E8 /* PBXTargetDependency */,
+			);
+			name = GoEuroUITests;
+			productName = GoEuroUITests;
+			productReference = 766D14101F5C2A9200AA10E8 /* GoEuroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		766D13E41F5C2A9200AA10E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Pavel Katunin";
+				TargetAttributes = {
+					766D13EB1F5C2A9200AA10E8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					766D14041F5C2A9200AA10E8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 766D13EB1F5C2A9200AA10E8;
+					};
+					766D140F1F5C2A9200AA10E8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 766D13EB1F5C2A9200AA10E8;
+					};
+				};
+			};
+			buildConfigurationList = 766D13E71F5C2A9200AA10E8 /* Build configuration list for PBXProject "GoEuro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 766D13E31F5C2A9200AA10E8;
+			productRefGroup = 766D13ED1F5C2A9200AA10E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				766D13EB1F5C2A9200AA10E8 /* GoEuro */,
+				766D14041F5C2A9200AA10E8 /* GoEuroTests */,
+				766D140F1F5C2A9200AA10E8 /* GoEuroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		766D13EA1F5C2A9200AA10E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766D13FF1F5C2A9200AA10E8 /* LaunchScreen.storyboard in Resources */,
+				766D13FC1F5C2A9200AA10E8 /* Assets.xcassets in Resources */,
+				766D13FA1F5C2A9200AA10E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766D14031F5C2A9200AA10E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766D144B1F61628B00AA10E8 /* testTravels.json in Resources */,
+				766D144F1F61641300AA10E8 /* incorrectAPITestTravels.json in Resources */,
+				766D144D1F6163C400AA10E8 /* incorrectJSONTestTravels.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766D140E1F5C2A9200AA10E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		766D13E81F5C2A9200AA10E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766D13F41F5C2A9200AA10E8 /* AppDelegate.m in Sources */,
+				766D143B1F5C3FA400AA10E8 /* GESearchTravelsViewController.m in Sources */,
+				766D14251F5C2C1900AA10E8 /* GETravelsListViewController.m in Sources */,
+				766D142A1F5C2C7D00AA10E8 /* GETravelsLoader.m in Sources */,
+				766D142D1F5C2C9600AA10E8 /* GEJSONTravelsParser.m in Sources */,
+				766D14301F5C2CA400AA10E8 /* GETravel.m in Sources */,
+				766D14461F61597600AA10E8 /* GERemoteDataLoader.m in Sources */,
+				766D13F11F5C2A9200AA10E8 /* main.m in Sources */,
+				766D14381F5C347800AA10E8 /* GETravelTableViewCell.m in Sources */,
+				766D143F1F5EF00900AA10E8 /* NSLayoutConstraint+Helpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766D14011F5C2A9200AA10E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766D14331F5C340900AA10E8 /* GEJSONTravelsParserTests.m in Sources */,
+				766D14421F6154B500AA10E8 /* GETravelsLoaderTests.m in Sources */,
+				766D14491F61599E00AA10E8 /* GELocalDataLoader.m in Sources */,
+				766D14351F5C343700AA10E8 /* GETravelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766D140C1F5C2A9200AA10E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766D14151F5C2A9200AA10E8 /* GoEuroUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		766D14071F5C2A9200AA10E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 766D13EB1F5C2A9200AA10E8 /* GoEuro */;
+			targetProxy = 766D14061F5C2A9200AA10E8 /* PBXContainerItemProxy */;
+		};
+		766D14121F5C2A9200AA10E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 766D13EB1F5C2A9200AA10E8 /* GoEuro */;
+			targetProxy = 766D14111F5C2A9200AA10E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		766D13F81F5C2A9200AA10E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				766D13F91F5C2A9200AA10E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		766D13FD1F5C2A9200AA10E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				766D13FE1F5C2A9200AA10E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		766D14171F5C2A9200AA10E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		766D14181F5C2A9200AA10E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		766D141A1F5C2A9200AA10E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoEuro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PavelKatunin.GoEuro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		766D141B1F5C2A9200AA10E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoEuro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PavelKatunin.GoEuro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		766D141D1F5C2A9200AA10E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoEuroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PavelKatunin.GoEuroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoEuro.app/GoEuro";
+			};
+			name = Debug;
+		};
+		766D141E1F5C2A9200AA10E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoEuroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PavelKatunin.GoEuroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoEuro.app/GoEuro";
+			};
+			name = Release;
+		};
+		766D14201F5C2A9200AA10E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoEuroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PavelKatunin.GoEuroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoEuro;
+			};
+			name = Debug;
+		};
+		766D14211F5C2A9200AA10E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GoEuroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PavelKatunin.GoEuroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoEuro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		766D13E71F5C2A9200AA10E8 /* Build configuration list for PBXProject "GoEuro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766D14171F5C2A9200AA10E8 /* Debug */,
+				766D14181F5C2A9200AA10E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		766D14191F5C2A9200AA10E8 /* Build configuration list for PBXNativeTarget "GoEuro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766D141A1F5C2A9200AA10E8 /* Debug */,
+				766D141B1F5C2A9200AA10E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		766D141C1F5C2A9200AA10E8 /* Build configuration list for PBXNativeTarget "GoEuroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766D141D1F5C2A9200AA10E8 /* Debug */,
+				766D141E1F5C2A9200AA10E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		766D141F1F5C2A9200AA10E8 /* Build configuration list for PBXNativeTarget "GoEuroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766D14201F5C2A9200AA10E8 /* Debug */,
+				766D14211F5C2A9200AA10E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 766D13E41F5C2A9200AA10E8 /* Project object */;
+}
